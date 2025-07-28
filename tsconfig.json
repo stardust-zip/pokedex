@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".", // allows you to use paths relative to the project root
+    "target": "esnext",
+    "module": "esnext",
+    "rootDir": "./src", // where the .ts files are located
+    "outDir": "./dist", // where the .js files will go
+    "strict": true,
+    "moduleResolution": "Node", // specifies how modules are resolved
+    "esModuleInterop": true, // allows you to use ES module syntax
+    "skipLibCheck": true // skip type checking all declaration files
+  },
+  "include": ["./src/**/*.ts"], // specifies the files to be included in the compilation
+  "exclude": ["node_modules"] // specifies the files to be excluded from the compilation
+}

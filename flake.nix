@@ -18,7 +18,7 @@
       devShells = eachSystem (pkgs: {
         default = pkgs.mkShell {
           packages = [
-            pkgs.nodejs_24
+            pkgs.nodejs
 
             # Alternatively, you can use a specific major version of Node.js
 
@@ -44,7 +44,11 @@
 
             pkgs.vscode-langservers-extracted
           ];
+        shellHook=''
+          export PS1="TypeScript Env $PS1"
+        '';
         };
+
       });
     };
 }
