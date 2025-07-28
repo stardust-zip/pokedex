@@ -4,10 +4,10 @@
   "description": "- A Pokedex is just a make-believe device that lets us look up information about Pokemon (their name, type and stats).",
   "main": "src/main.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-		"build": "npx tsc",
-		"start": "node dist/main.js",
-		"dev": "npx tsc && node dist/main.js"
+    "test": "vitest --run",
+    "build": "npx tsc",
+    "start": "node dist/main.js",
+    "dev": "npx tsc && node dist/main.js"
   },
   "repository": {
     "type": "git",
@@ -16,7 +16,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "type": "module",
   "bugs": {
     "url": "https://github.com/stardust-zip/pokedex/issues"
@@ -24,6 +23,7 @@
   "homepage": "https://github.com/stardust-zip/pokedex#readme",
   "devDependencies": {
     "@types/node": "^24.1.0",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
   }
 }
